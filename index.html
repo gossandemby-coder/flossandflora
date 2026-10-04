@@ -1,0 +1,292 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Floss and Flora · Anya Johnson, RDH</title>
+<meta name="description" content="Floss and Flora is a YouTube channel by Anya Johnson, Registered Dental Hygienist. Research-backed videos on oral health and how your mouth connects to the rest of your body.">
+<link rel="canonical" href="https://flossandflora.com/">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://flossandflora.com/">
+<meta property="og:title" content="Floss and Flora · Anya Johnson, RDH">
+<meta property="og:description" content="Research-backed oral health videos from a Registered Dental Hygienist.">
+<meta property="og:image" content="https://i.ytimg.com/vi/ANbw_RXVAdI/maxresdefault.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#2f5d50">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='32' fill='%232f5d50'/%3E%3Cpath d='M32 50c0-14 4-22 14-28-10 0-16 6-14 16-2-10-8-16-18-16 10 6 18 14 18 28z' fill='%23f6f1e7'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,400&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #eef5f1;
+    --surface: #ffffff;
+    --ink: #1a2b26;
+    --muted: #55675f;
+    --line: #d5e3dc;
+    --green: #2f5d50;
+    --green-ink: #eef5f1;
+    --sage: #a9c3a4;
+    --blush: #e8b7a6;
+    --yt: #c4302b;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #141a18;
+      --surface: #1c2421;
+      --ink: #ece6da;
+      --muted: #a3b0aa;
+      --line: #2c3833;
+      --green: #8fbfa9;
+      --green-ink: #10201a;
+      --sage: #5e7e66;
+      --blush: #b07c6c;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #141a18; --surface: #1c2421; --ink: #ece6da; --muted: #a3b0aa;
+    --line: #2c3833; --green: #8fbfa9; --green-ink: #10201a; --sage: #5e7e66; --blush: #b07c6c;
+  }
+
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font: 400 17px/1.65 Figtree, system-ui, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  a { color: var(--green); }
+  h1, h2, h3 { font-family: Fraunces, Georgia, serif; font-weight: 600; line-height: 1.15; margin: 0; }
+  .wrap { max-width: 1040px; margin: 0 auto; padding: 0 24px; }
+
+  /* nav */
+  nav { padding: 22px 0; }
+  nav .wrap { display: flex; align-items: center; justify-content: space-between; gap: 16px; }
+  .brand { display: flex; align-items: center; gap: 10px; text-decoration: none; color: var(--ink); font-family: Fraunces, serif; font-size: 20px; font-weight: 600; }
+  .brand svg { width: 32px; height: 32px; }
+  nav ul { list-style: none; display: flex; gap: 24px; margin: 0; padding: 0; font-size: 15px; }
+  nav ul a { color: var(--muted); text-decoration: none; }
+  nav ul a:hover { color: var(--ink); }
+
+  /* hero */
+  .hero { padding: 56px 0 88px; }
+  .hero .wrap { display: grid; grid-template-columns: 1.15fr 0.85fr; gap: 56px; align-items: center; }
+  .eyebrow { font-size: 13px; letter-spacing: .14em; text-transform: uppercase; color: var(--green); font-weight: 600; margin-bottom: 18px; }
+  .hero h1 { font-size: clamp(40px, 6vw, 68px); letter-spacing: -0.02em; }
+  .hero h1 em { font-style: italic; font-weight: 400; color: var(--green); }
+  .hero p.lede { font-size: 19px; color: var(--muted); max-width: 34em; margin: 22px 0 32px; }
+  .btns { display: flex; flex-wrap: wrap; gap: 12px; }
+  .btn { display: inline-flex; align-items: center; gap: 10px; padding: 14px 22px; border-radius: 999px; font-weight: 600; font-size: 15px; text-decoration: none; transition: transform .15s ease, box-shadow .15s ease; }
+  .btn:hover { transform: translateY(-1px); }
+  .btn-primary { background: var(--yt); color: #fff; box-shadow: 0 6px 18px -8px rgba(196,48,43,.6); }
+  .btn-ghost { border: 1.5px solid var(--line); color: var(--ink); background: var(--surface); }
+  .btn svg { width: 20px; height: 20px; }
+
+  .portrait { position: relative; aspect-ratio: 4/5; max-width: 380px; justify-self: center; width: 100%; }
+  .portrait .blob { position: absolute; inset: 0; border-radius: 48% 52% 44% 56% / 55% 45% 55% 45%; background: var(--sage); overflow: hidden; display: grid; place-items: center; }
+  .portrait .blob img { width: 100%; height: 100%; object-fit: cover; }
+  .portrait .blob svg { width: 62%; }
+  .portrait .badge { position: absolute; left: -12px; bottom: 28px; background: var(--surface); border: 1px solid var(--line); border-radius: 14px; padding: 12px 16px; font-size: 14px; line-height: 1.35; box-shadow: 0 10px 30px -14px rgba(0,0,0,.3); }
+  .portrait .badge strong { display: block; font-family: Fraunces, serif; font-size: 17px; }
+
+  /* sections */
+  section { padding: 80px 0; border-top: 1px solid var(--line); }
+  .section-head { display: flex; justify-content: space-between; align-items: end; gap: 24px; margin-bottom: 36px; flex-wrap: wrap; }
+  .section-head h2 { font-size: clamp(30px, 4vw, 42px); }
+  .section-head p { color: var(--muted); margin: 8px 0 0; max-width: 32em; }
+
+  .about .wrap { display: grid; grid-template-columns: 0.9fr 1.1fr; gap: 56px; }
+  .about h2 { font-size: clamp(30px, 4vw, 42px); }
+  .about p { margin: 0 0 1em; }
+  .pillars { display: grid; gap: 14px; margin-top: 8px; }
+  .pillar { display: flex; gap: 14px; align-items: flex-start; background: var(--surface); border: 1px solid var(--line); border-radius: 16px; padding: 18px 20px; }
+  .pillar .dot { flex: none; width: 36px; height: 36px; border-radius: 50%; background: var(--sage); display: grid; place-items: center; color: var(--ink); }
+  .pillar .dot svg { width: 18px; height: 18px; }
+  .pillar h3 { font-family: Figtree, sans-serif; font-size: 16px; margin-bottom: 2px; }
+  .pillar p { margin: 0; color: var(--muted); font-size: 15px; }
+
+  .videos { display: grid; grid-template-columns: repeat(2, 1fr); gap: 28px; }
+  .video { background: var(--surface); border: 1px solid var(--line); border-radius: 20px; overflow: hidden; }
+  .player { position: relative; aspect-ratio: 16/9; background: #000; cursor: pointer; border: 0; padding: 0; width: 100%; display: block; }
+  .player img { width: 100%; height: 100%; object-fit: cover; display: block; opacity: .92; transition: opacity .2s; }
+  .player:hover img { opacity: 1; }
+  .player .play { position: absolute; inset: 0; margin: auto; width: 68px; height: 48px; }
+  .player .dur { position: absolute; right: 10px; bottom: 10px; background: rgba(0,0,0,.75); color: #fff; font-size: 12px; font-weight: 600; padding: 2px 6px; border-radius: 4px; }
+  .player iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+  .video .meta { padding: 20px 22px 24px; }
+  .video h3 { font-size: 21px; margin-bottom: 8px; }
+  .video p { margin: 0; color: var(--muted); font-size: 15px; }
+
+  .cta { text-align: center; }
+  .cta .card { background: var(--green); color: var(--green-ink); border-radius: 28px; padding: 64px 28px; position: relative; overflow: hidden; }
+  .cta h2 { font-size: clamp(30px, 4.5vw, 46px); }
+  .cta p { max-width: 30em; margin: 14px auto 28px; opacity: .85; }
+  .cta .leaf { position: absolute; width: 220px; opacity: .12; }
+  .cta .leaf.l { left: -40px; bottom: -50px; transform: rotate(20deg); }
+  .cta .leaf.r { right: -40px; top: -50px; transform: rotate(200deg); }
+
+  footer { padding: 40px 0 56px; color: var(--muted); font-size: 13px; }
+  footer .disclaimer { max-width: 60em; margin: 0 0 16px; }
+
+  @media (max-width: 820px) {
+    .hero .wrap, .about .wrap { grid-template-columns: 1fr; gap: 40px; }
+    .portrait { max-width: 220px; order: -1; }
+    .videos { grid-template-columns: 1fr; }
+    nav ul { display: none; }
+  }
+  @media (max-width: 480px) {
+    .wrap { padding: 0 16px; }
+    .hero { padding: 24px 0 64px; }
+    section { padding: 60px 0; }
+    .btn { width: 100%; justify-content: center; }
+    .portrait .badge { left: 0; }
+  }
+</style>
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="sprig" viewBox="0 0 64 64"><path d="M32 58C32 38 36 26 50 16c-14 2-20 10-18 24-2-14-10-22-22-24 12 8 22 20 22 42z" fill="currentColor"/></symbol>
+  <symbol id="yt" viewBox="0 0 24 24"><path fill="currentColor" d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.6 12 3.6 12 3.6s-7.5 0-9.4.5A3 3 0 0 0 .5 6.2 31 31 0 0 0 0 12a31 31 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.5 9.4.5 9.4.5s7.5 0 9.4-.5a3 3 0 0 0 2.1-2.1A31 31 0 0 0 24 12a31 31 0 0 0-.5-5.8zM9.6 15.6V8.4l6.3 3.6-6.3 3.6z"/></symbol>
+</svg>
+
+<nav>
+  <div class="wrap">
+    <a class="brand" href="#">
+      <svg style="color:var(--green)"><use href="#sprig"/></svg>
+      Floss and Flora
+    </a>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#videos">Videos</a></li>
+      <li><a href="https://www.youtube.com/@FlossandFlora" target="_blank" rel="noopener">YouTube</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="wrap">
+    <div>
+      <div class="eyebrow">Anya Johnson, RDH</div>
+      <h1>Your mouth is <em>talking.</em><br>Let's learn to listen.</h1>
+      <p class="lede">Floss and Flora is where a Registered Dental Hygienist breaks down the research on oral health and how your mouth connects to the rest of your body, in plain language you can actually use.</p>
+      <div class="btns">
+        <a class="btn btn-primary" href="https://www.youtube.com/@FlossandFlora?sub_confirmation=1" target="_blank" rel="noopener">
+          <svg><use href="#yt"/></svg> Subscribe on YouTube
+        </a>
+        <a class="btn btn-ghost" href="#videos">Watch the latest</a>
+      </div>
+    </div>
+
+    <div class="portrait">
+      <div class="blob">
+        <!-- To use a photo: save it as anya.jpg next to this file and replace the <svg> below with:
+             <img src="anya.jpg" alt="Anya Johnson, Registered Dental Hygienist"> -->
+        <svg style="color:var(--surface)" viewBox="0 0 64 64" role="img" aria-label="Floss and Flora sprig"><use href="#sprig"/></svg>
+      </div>
+      <div class="badge"><strong>Anya Johnson</strong>Registered Dental Hygienist</div>
+    </div>
+  </div>
+</header>
+
+<section id="about" class="about">
+  <div class="wrap">
+    <div>
+      <div class="eyebrow">About</div>
+      <h2>Hi, I'm Anya.</h2>
+    </div>
+    <div>
+      <p>I'm a Registered Dental Hygienist, and I spend my days seeing how small, everyday habits show up in people's mouths, often long before anyone notices a problem.</p>
+      <p>I started Floss and Flora to share what I wish every patient knew: why your gums, your teeth, and the tiny ecosystem living in your mouth matter for your whole body. Every video is built on published research, with sources linked so you can read them yourself.</p>
+      <div class="pillars">
+        <div class="pillar">
+          <div class="dot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 5h11a4 4 0 0 1 4 4v10H8a4 4 0 0 1-4-4z"/><path d="M8 9h7M8 13h5"/></svg></div>
+          <div><h3>Backed by research</h3><p>Studies and sources cited in every description.</p></div>
+        </div>
+        <div class="pillar">
+          <div class="dot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 21s-7-4.5-7-11a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 6.5-7 11-7 11z"/></svg></div>
+          <div><h3>Mouth–body connection</h3><p>How oral health links to your heart, sleep, stress, and more.</p></div>
+        </div>
+        <div class="pillar">
+          <div class="dot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 12l4 4L19 6"/></svg></div>
+          <div><h3>Clear next steps</h3><p>Practical things you can do, plus when to see a professional.</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="videos">
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <div class="eyebrow">Latest videos</div>
+        <h2>Start watching</h2>
+      </div>
+      <a class="btn btn-ghost" href="https://www.youtube.com/@FlossandFlora/videos" target="_blank" rel="noopener">See all videos →</a>
+    </div>
+
+    <div class="videos">
+      <article class="video">
+        <button class="player" data-id="BW6_1fEB9Fs" aria-label="Play: The Nighttime Habit Destroying Your Teeth">
+          <img src="https://i.ytimg.com/vi/BW6_1fEB9Fs/hqdefault.jpg" alt="" loading="lazy">
+          <svg class="play" viewBox="0 0 68 48"><path d="M66.5 7.7a8.5 8.5 0 0 0-6-6C55.2.3 34 .3 34 .3S12.8.3 7.5 1.7a8.5 8.5 0 0 0-6 6C0 13 0 24 0 24s0 11 1.5 16.3a8.5 8.5 0 0 0 6 6C12.8 47.7 34 47.7 34 47.7s21.2 0 26.5-1.4a8.5 8.5 0 0 0 6-6C68 35 68 24 68 24s0-11-1.5-16.3z" fill="#c4302b"/><path d="M27 34V14l18 10z" fill="#fff"/></svg>
+          <span class="dur">19:14</span>
+        </button>
+        <div class="meta">
+          <h3>The Nighttime Habit Destroying Your Teeth</h3>
+          <p>Clenching and grinding are easy to miss. Here's how to spot the signs, what it can cost you, and what to do about it.</p>
+        </div>
+      </article>
+
+      <article class="video">
+        <button class="player" data-id="ANbw_RXVAdI" aria-label="Play: How Bleeding Gums Can Mean A Heart Attack">
+          <img src="https://i.ytimg.com/vi/ANbw_RXVAdI/hqdefault.jpg" alt="" loading="lazy">
+          <svg class="play" viewBox="0 0 68 48"><path d="M66.5 7.7a8.5 8.5 0 0 0-6-6C55.2.3 34 .3 34 .3S12.8.3 7.5 1.7a8.5 8.5 0 0 0-6 6C0 13 0 24 0 24s0 11 1.5 16.3a8.5 8.5 0 0 0 6 6C12.8 47.7 34 47.7 34 47.7s21.2 0 26.5-1.4a8.5 8.5 0 0 0 6-6C68 35 68 24 68 24s0-11-1.5-16.3z" fill="#c4302b"/><path d="M27 34V14l18 10z" fill="#fff"/></svg>
+          <span class="dur">12:33</span>
+        </button>
+        <div class="meta">
+          <h3>How Bleeding Gums Can Mean A Heart Attack</h3>
+          <p>What your gums may be signaling about your cardiovascular health, and why it's worth paying attention.</p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="cta">
+  <div class="wrap">
+    <div class="card">
+      <svg class="leaf l"><use href="#sprig"/></svg>
+      <svg class="leaf r"><use href="#sprig"/></svg>
+      <h2>New videos, straight from the chair.</h2>
+      <p>Subscribe to Floss and Flora so you don't miss the next one.</p>
+      <a class="btn btn-primary" href="https://www.youtube.com/@FlossandFlora?sub_confirmation=1" target="_blank" rel="noopener">
+        <svg><use href="#yt"/></svg> Subscribe on YouTube
+      </a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <p class="disclaimer"><strong>Medical disclaimer:</strong> Anya is a Registered Dental Hygienist, not a doctor or dentist. Content on this site and the Floss and Flora channel is for educational and informational purposes only and is not a substitute for professional medical advice, diagnosis, or treatment. Always consult your physician, dentist, or other qualified healthcare provider with questions about a medical condition. In an emergency, call 911.</p>
+    <p>© <span id="yr">2026</span> Floss and Flora · Anya Johnson, RDH</p>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('yr').textContent = new Date().getFullYear();
+  document.querySelectorAll('.player').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      var id = btn.dataset.id;
+      btn.innerHTML = '<iframe src="https://www.youtube-nocookie.com/embed/' + id +
+        '?autoplay=1&rel=0" title="YouTube video" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe>';
+      btn.style.cursor = 'default';
+    }, { once: true });
+  });
+</script>
+</body>
+</html>

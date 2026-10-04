@@ -1,0 +1,17 @@
+# Static site: no build step, publish the repo root.
+[build]
+  publish = "."
+  command = ""
+
+# Redirect www to the bare domain.
+[[redirects]]
+  from = "https://www.flossandflora.com/*"
+  to = "https://flossandflora.com/:splat"
+  status = 301
+  force = true
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
